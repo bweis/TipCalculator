@@ -9,9 +9,23 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
+    @IBOutlet weak var okPercentage: UILabel!
+    @IBOutlet weak var goodPercentage: UILabel!
+    @IBOutlet weak var greatPercentage: UILabel!
+    
+    @IBOutlet weak var okDecrement: UIButton!
+    @IBOutlet weak var goodDecrement: UIButton!
+    @IBOutlet weak var greatDecrement: UIButton!
+    
+    @IBOutlet weak var okIncrement: UIButton!
+    @IBOutlet weak var goodIncrement: UIButton!
+    @IBOutlet weak var greatIncrement: UIButton!
+    
+    @IBOutlet weak var resetDefaults: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Tip Calculator"
 
         // Do any additional setup after loading the view.
     }
@@ -21,7 +35,10 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func incrementDefaultOkTipPercentage(_ sender: Any) {
 
+    }
+    
     /*
     // MARK: - Navigation
 

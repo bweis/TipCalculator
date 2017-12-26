@@ -79,7 +79,6 @@
 		FCAE348B1FF0C644000464CD = {
 			isa = PBXGroup;
 			children = (
-				FCAE34C51FF0DC99000464CD /* SettingsViewController.swift */,
 				FCAE34961FF0C644000464CD /* TipCalculator */,
 				FCAE34AB1FF0C644000464CD /* TipCalculatorTests */,
 				FCAE34B61FF0C644000464CD /* TipCalculatorUITests */,
@@ -100,6 +99,7 @@
 		FCAE34961FF0C644000464CD /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				FCAE34C51FF0DC99000464CD /* SettingsViewController.swift */,
 				FCAE34971FF0C644000464CD /* AppDelegate.swift */,
 				FCAE34991FF0C644000464CD /* ViewController.swift */,
 				FCAE349B1FF0C644000464CD /* Main.storyboard */,
