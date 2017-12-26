@@ -140,68 +140,81 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="18%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tY4-xI-PnS">
-                                <rect key="frame" x="325" y="80" width="31" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tY4-xI-PnS">
+                                <rect key="frame" x="313" y="80" width="43" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJJ-he-xDc">
-                                <rect key="frame" x="325" y="127" width="34" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="18%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJJ-he-xDc">
+                                <rect key="frame" x="313" y="127" width="43" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="25%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQR-PF-tUG">
-                                <rect key="frame" x="325" y="178" width="33" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQR-PF-tUG">
+                                <rect key="frame" x="313" y="178" width="46" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrY-bu-Myi">
-                                <rect key="frame" x="287" y="75" width="30" height="30"/>
+                                <rect key="frame" x="275" y="75" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="changeDefaultPercentage:" destination="yHb-wI-phG" eventType="touchUpInside" id="Y0l-HG-Pzg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvg-5r-BWP">
-                                <rect key="frame" x="287" y="122" width="30" height="30"/>
+                                <rect key="frame" x="275" y="122" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="changeDefaultPercentage:" destination="yHb-wI-phG" eventType="touchUpInside" id="OV7-dE-fHN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOM-VJ-aYH">
-                                <rect key="frame" x="287" y="173" width="30" height="30"/>
+                                <rect key="frame" x="275" y="173" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="changeDefaultPercentage:" destination="yHb-wI-phG" eventType="touchUpInside" id="54R-kP-P0y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfp-fY-wEn">
                                 <rect key="frame" x="364" y="75" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="changeDefaultPercentage:" destination="yHb-wI-phG" eventType="touchUpInside" id="llI-3v-FYY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CU-a2-byb">
                                 <rect key="frame" x="364" y="122" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="changeDefaultPercentage:" destination="yHb-wI-phG" eventType="touchUpInside" id="Rhc-hK-n7A"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POM-tf-Dd5">
                                 <rect key="frame" x="364" y="173" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="changeDefaultPercentage:" destination="yHb-wI-phG" eventType="touchUpInside" id="dMi-dd-bgY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTC-6n-1hD">
                                 <rect key="frame" x="157" y="218" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Reset Defaults"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NWQ-Gi-VLC">
-                                <rect key="frame" x="364" y="76" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="+"/>
                                 <connections>
-                                    <action selector="incrementDefaultOkTipPercentage:" destination="yHb-wI-phG" eventType="touchUpInside" id="W25-k7-6TA"/>
+                                    <action selector="resetDefaults:" destination="yHb-wI-phG" eventType="touchUpInside" id="7Wk-qm-ySq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -209,22 +222,20 @@
                         <viewLayoutGuide key="safeArea" id="Q7x-Im-dmQ"/>
                     </view>
                     <connections>
-                        <outlet property="decrementDefaultOkTipPercentage" destination="BrY-bu-Myi" id="AM6-fo-aCl"/>
-                        <outlet property="goodDecrement" destination="Bvg-5r-BWP" id="eSx-TY-nMW"/>
-                        <outlet property="goodIncrement" destination="1CU-a2-byb" id="et1-Ck-f6c"/>
+                        <outlet property="goodDec" destination="Bvg-5r-BWP" id="Rdt-Hx-tlK"/>
+                        <outlet property="goodInc" destination="1CU-a2-byb" id="Lb7-nW-HEH"/>
                         <outlet property="goodPercentage" destination="aJJ-he-xDc" id="9jw-wD-gUg"/>
-                        <outlet property="greatDecrement" destination="kOM-VJ-aYH" id="9sm-ia-jfn"/>
-                        <outlet property="greatIncrement" destination="POM-tf-Dd5" id="ZQk-h9-D1T"/>
+                        <outlet property="greatDec" destination="kOM-VJ-aYH" id="lSj-jZ-IG1"/>
+                        <outlet property="greatInc" destination="POM-tf-Dd5" id="nht-hh-3E7"/>
                         <outlet property="greatPercentage" destination="EQR-PF-tUG" id="8kn-Ag-QzV"/>
-                        <outlet property="okDecrement" destination="BrY-bu-Myi" id="lnC-C7-Oyr"/>
-                        <outlet property="okIncrement" destination="kfp-fY-wEn" id="2bj-V5-7fT"/>
+                        <outlet property="okDec" destination="BrY-bu-Myi" id="0Ek-9d-p25"/>
+                        <outlet property="okInc" destination="kfp-fY-wEn" id="WtW-sH-JlL"/>
                         <outlet property="okPercentage" destination="tY4-xI-PnS" id="Kwy-79-QY1"/>
-                        <outlet property="resetDefaults" destination="oTC-6n-1hD" id="Ixe-IP-bMC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kuZ-Nr-NNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="581" y="711"/>
+            <point key="canvasLocation" x="579.71014492753625" y="710.86956521739137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UDZ-W1-g70">

@@ -13,19 +13,19 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var goodPercentage: UILabel!
     @IBOutlet weak var greatPercentage: UILabel!
     
-    @IBOutlet weak var okDecrement: UIButton!
-    @IBOutlet weak var goodDecrement: UIButton!
-    @IBOutlet weak var greatDecrement: UIButton!
+    @IBOutlet weak var okDec: UIButton!
+    @IBOutlet weak var goodDec: UIButton!
+    @IBOutlet weak var greatDec: UIButton!
     
-    @IBOutlet weak var okIncrement: UIButton!
-    @IBOutlet weak var goodIncrement: UIButton!
-    @IBOutlet weak var greatIncrement: UIButton!
+    @IBOutlet weak var okInc: UIButton!
+    @IBOutlet weak var goodInc: UIButton!
+    @IBOutlet weak var greatInc: UIButton!
     
-    @IBOutlet weak var resetDefaults: UIButton!
-    
+    let settings = Settings.shared
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Tip Calculator"
+        self.title = "Settings"
 
         // Do any additional setup after loading the view.
     }
@@ -35,18 +35,40 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func incrementDefaultOkTipPercentage(_ sender: Any) {
+    @IBAction func changeDefaultPercentage(_ sender: UIButton) {
+        switch sender {
+        case okDec:
+            settings.changeDefaultPercentage(of: .Ok, amount: -1)
+            break
+        case goodDec:
+            settings.changeDefaultPercentage(of: .Good, amount: -1)
+            break
+        case greatDec:
+            settings.changeDefaultPercentage(of: .Great, amount: -1)
+            break
+        case okInc:
+            settings.changeDefaultPercentage(of: .Ok, amount: 1)
+            break
+        case goodInc:
+            settings.changeDefaultPercentage(of: .Good, amount: 1)
+            break
+        case greatInc:
+            settings.changeDefaultPercentage(of: .Great, amount: 1)
+            break
+        default: break
+        }
 
+        updateLabels()
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func resetDefaults(_ sender: Any) {
+        settings.resetDefaults()
+        updateLabels()
     }
-    */
+    private func updateLabels() {
+        okPercentage.text = "\(settings.okPercentage)%"
+        goodPercentage.text = "\(settings.goodPercentage)%"
+        greatPercentage.text = "\(settings.greatPercentage)%"
+    }
 
 }
