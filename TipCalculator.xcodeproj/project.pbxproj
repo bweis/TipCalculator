@@ -15,6 +15,7 @@
 		FCAE34AD1FF0C644000464CD /* TipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE34AC1FF0C644000464CD /* TipCalculatorTests.swift */; };
 		FCAE34B81FF0C644000464CD /* TipCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE34B71FF0C644000464CD /* TipCalculatorUITests.swift */; };
 		FCAE34C61FF0DC99000464CD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE34C51FF0DC99000464CD /* SettingsViewController.swift */; };
+		FCAE34C81FF300BF000464CD /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE34C71FF300BF000464CD /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FCAE34B71FF0C644000464CD /* TipCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorUITests.swift; sourceTree = "<group>"; };
 		FCAE34B91FF0C644000464CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCAE34C51FF0DC99000464CD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FCAE34C71FF300BF000464CD /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				FCAE349E1FF0C644000464CD /* Assets.xcassets */,
 				FCAE34A01FF0C644000464CD /* LaunchScreen.storyboard */,
 				FCAE34A31FF0C644000464CD /* Info.plist */,
+				FCAE34C71FF300BF000464CD /* Settings.swift */,
 			);
 			path = TipCalculator;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				FCAE349A1FF0C644000464CD /* ViewController.swift in Sources */,
 				FCAE34981FF0C644000464CD /* AppDelegate.swift in Sources */,
+				FCAE34C81FF300BF000464CD /* Settings.swift in Sources */,
 				FCAE34C61FF0DC99000464CD /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
