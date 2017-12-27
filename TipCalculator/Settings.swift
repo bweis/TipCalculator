@@ -39,6 +39,17 @@ final class Settings {
         }
     }
     
+    func getPercentage(quality: Quality) -> Int {
+        switch (quality) {
+        case .Ok:
+            return okPercentage
+        case .Good:
+            return goodPercentage
+        case .Great:
+            return greatPercentage
+        }
+    }
+
     func resetDefaults() {
         okPercentage = Settings.DEFAULT_OK_PERCENTAGE
         goodPercentage = Settings.DEFAULT_GOOD_PERCENTAGE

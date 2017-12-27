@@ -38,6 +38,7 @@ Describe any challenges encountered while building the app.
 Sources Used:
 https://forums.developer.apple.com/thread/62336
 https://stackoverflow.com/questions/37953317/singleton-with-properties-in-swift-3
+https://dhoerl.wordpress.com/2015/04/09/swift-goodies-using-enums-for-viewsegment-identification/
 
 ## License
 

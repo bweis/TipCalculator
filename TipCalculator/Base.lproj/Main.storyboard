@@ -13,7 +13,7 @@
         <!--Tip Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TipCalculatorViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,7 +62,7 @@
                                     <segment title="25%"/>
                                 </segments>
                                 <connections>
-                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="yCD-ze-ecI"/>
+                                    <action selector="updateQuality:" destination="BYZ-38-t0r" eventType="valueChanged" id="TyD-LC-vdG"/>
                                 </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0.00" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gU6-rz-6Xg">
@@ -72,7 +72,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
-                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="M9V-GZ-kre"/>
+                                    <action selector="updateBill:" destination="BYZ-38-t0r" eventType="editingChanged" id="p9w-km-rpb"/>
                                 </connections>
                             </textField>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w0h-4m-Dzf">
@@ -98,7 +98,7 @@
                     <connections>
                         <outlet property="billField" destination="gU6-rz-6Xg" id="iJU-0q-VcG"/>
                         <outlet property="tipLabel" destination="uES-WC-0OR" id="YGe-6k-4pL"/>
-                        <outlet property="tipSelector" destination="dBF-dC-oYh" id="Gm3-6y-smm"/>
+                        <outlet property="tipSelector" destination="dBF-dC-oYh" id="zM3-kp-qFd"/>
                         <outlet property="totalLabel" destination="96S-Se-YZv" id="WiS-QX-3gl"/>
                     </connections>
                 </viewController>
