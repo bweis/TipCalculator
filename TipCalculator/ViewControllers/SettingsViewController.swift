@@ -26,38 +26,35 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Settings"
-
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateLabels()
     }
     
     @IBAction func changeDefaultPercentage(_ sender: UIButton) {
         switch sender {
         case okDec:
-            settings.changeDefaultPercentage(of: .Ok, amount: -1)
+            settings.changeDefaultPercentage(of: .ok, amount: -1)
             break
         case goodDec:
-            settings.changeDefaultPercentage(of: .Good, amount: -1)
+            settings.changeDefaultPercentage(of: .good, amount: -1)
             break
         case greatDec:
-            settings.changeDefaultPercentage(of: .Great, amount: -1)
+            settings.changeDefaultPercentage(of: .great, amount: -1)
             break
         case okInc:
-            settings.changeDefaultPercentage(of: .Ok, amount: 1)
+            settings.changeDefaultPercentage(of: .ok, amount: 1)
             break
         case goodInc:
-            settings.changeDefaultPercentage(of: .Good, amount: 1)
+            settings.changeDefaultPercentage(of: .good, amount: 1)
             break
         case greatInc:
-            settings.changeDefaultPercentage(of: .Great, amount: 1)
+            settings.changeDefaultPercentage(of: .great, amount: 1)
             break
         default: break
         }
-
         updateLabels()
     }
     
@@ -66,9 +63,9 @@ class SettingsViewController: UIViewController {
         updateLabels()
     }
     private func updateLabels() {
-        okPercentage.text = "\(settings.okPercentage)%"
-        goodPercentage.text = "\(settings.goodPercentage)%"
-        greatPercentage.text = "\(settings.greatPercentage)%"
+        okPercentage.text = "\(settings.getDefaultOkPercentage())%"
+        goodPercentage.text = "\(settings.getDefaultGoodPercentage())%"
+        greatPercentage.text = "\(settings.getDefaultGreatPercentage())%"
     }
 
 }

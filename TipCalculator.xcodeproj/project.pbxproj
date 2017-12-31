@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC0DD42C1FF348A1009EAE59 /* String+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0DD42B1FF348A1009EAE59 /* String+Currency.swift */; };
 		FCAE34981FF0C644000464CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE34971FF0C644000464CD /* AppDelegate.swift */; };
 		FCAE349A1FF0C644000464CD /* TipCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAE34991FF0C644000464CD /* TipCalculatorViewController.swift */; };
 		FCAE349D1FF0C644000464CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCAE349B1FF0C644000464CD /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC0DD42B1FF348A1009EAE59 /* String+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Currency.swift"; sourceTree = "<group>"; };
 		FCAE34941FF0C644000464CD /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCAE34971FF0C644000464CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCAE34991FF0C644000464CD /* TipCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC0DD4271FF3483E009EAE59 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FCAE34991FF0C644000464CD /* TipCalculatorViewController.swift */,
+				FCAE34C51FF0DC99000464CD /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FC0DD4291FF34865009EAE59 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCAE34C71FF300BF000464CD /* Settings.swift */,
+				FCAE34C91FF30E16000464CD /* TipCalculator.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FC0DD42A1FF34878009EAE59 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC0DD42B1FF348A1009EAE59 /* String+Currency.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FCAE348B1FF0C644000464CD = {
 			isa = PBXGroup;
 			children = (
@@ -103,15 +131,14 @@
 		FCAE34961FF0C644000464CD /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				FCAE34C51FF0DC99000464CD /* SettingsViewController.swift */,
+				FC0DD42A1FF34878009EAE59 /* Extensions */,
+				FC0DD4291FF34865009EAE59 /* Models */,
+				FC0DD4271FF3483E009EAE59 /* ViewControllers */,
 				FCAE34971FF0C644000464CD /* AppDelegate.swift */,
-				FCAE34991FF0C644000464CD /* TipCalculatorViewController.swift */,
 				FCAE349B1FF0C644000464CD /* Main.storyboard */,
 				FCAE349E1FF0C644000464CD /* Assets.xcassets */,
 				FCAE34A01FF0C644000464CD /* LaunchScreen.storyboard */,
 				FCAE34A31FF0C644000464CD /* Info.plist */,
-				FCAE34C71FF300BF000464CD /* Settings.swift */,
-				FCAE34C91FF30E16000464CD /* TipCalculator.swift */,
 			);
 			path = TipCalculator;
 			sourceTree = "<group>";
@@ -271,6 +298,7 @@
 				FCAE349A1FF0C644000464CD /* TipCalculatorViewController.swift in Sources */,
 				FCAE34981FF0C644000464CD /* AppDelegate.swift in Sources */,
 				FCAE34C81FF300BF000464CD /* Settings.swift in Sources */,
+				FC0DD42C1FF348A1009EAE59 /* String+Currency.swift in Sources */,
 				FCAE34C61FF0DC99000464CD /* SettingsViewController.swift in Sources */,
 				FCAE34CA1FF30E16000464CD /* TipCalculator.swift in Sources */,
 			);

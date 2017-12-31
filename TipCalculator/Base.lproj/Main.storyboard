@@ -53,7 +53,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dBF-dC-oYh">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="dBF-dC-oYh">
                                 <rect key="frame" x="20" y="248" width="374" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
@@ -91,15 +91,17 @@
                     <navigationItem key="navigationItem" title="Tip Calculator" id="3lH-5i-BHJ">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="37Q-3v-gHu">
                             <connections>
-                                <segue destination="yHb-wI-phG" kind="show" id="8uB-4p-HKO"/>
+                                <segue destination="yHb-wI-phG" kind="show" id="yxe-Jm-wrh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="billField" destination="gU6-rz-6Xg" id="iJU-0q-VcG"/>
+                        <outlet property="settingsButton" destination="37Q-3v-gHu" id="uqd-lb-Gaj"/>
                         <outlet property="tipLabel" destination="uES-WC-0OR" id="YGe-6k-4pL"/>
                         <outlet property="tipSelector" destination="dBF-dC-oYh" id="zM3-kp-qFd"/>
                         <outlet property="totalLabel" destination="96S-Se-YZv" id="WiS-QX-3gl"/>
+                        <segue destination="80x-EH-IOw" kind="unwind" unwindAction="myUnwindSegueWithSegue:" id="VWO-dm-6s4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -210,7 +212,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTC-6n-1hD">
-                                <rect key="frame" x="157" y="218" width="100" height="30"/>
+                                <rect key="frame" x="157" y="247" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Reset Defaults"/>
                                 <connections>
@@ -234,13 +236,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kuZ-Nr-NNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="80x-EH-IOw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="579.71014492753625" y="710.86956521739137"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation View Controller-->
         <scene sceneID="UDZ-W1-g70">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qXa-le-KDl" sceneMemberID="viewController">
+                <navigationController title="Navigation View Controller" automaticallyAdjustsScrollViewInsets="NO" id="qXa-le-KDl" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sew-cc-kGg">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
